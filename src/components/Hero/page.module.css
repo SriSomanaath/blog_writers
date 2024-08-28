@@ -1,0 +1,182 @@
+.hero {
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  background-image: 
+    radial-gradient(66.76% 50.21% at 50% 45.75%, rgba(15, 23, 40, 0) 0%, rgba(15, 23, 40, 0.08) 2%, #0e1525 80%),
+    url('/background_hero.jpg');
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  padding-bottom: 16px;
+  padding-top: 120px;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-bottom: 120px;
+    padding-top: 150px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero {
+    padding-bottom: 160px;
+    padding-top: 180px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .hero {
+    padding-bottom: 200px;
+    padding-top: 210px;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 3.2rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #f5f5f5;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.8), /* Bright light */
+               0 0 2px rgba(255, 255, 255, 0.6), /* Softer light */
+               0 0 3px rgba(0, 41, 195, 0.4),    /* Blue glow */
+               0 0 3px rgba(0, 212, 255, 0.3);   /* Cyan glow */
+}
+
+.title_spc{
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: #f86124;
+  text-shadow: 0 0 0px;
+}
+
+
+.title_sm {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #f5f5f5;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.8), /* Bright light */
+               0 0 2px rgba(255, 255, 255, 0.6), /* Softer light */
+               0 0 3px rgba(0, 41, 195, 0.4),    /* Blue glow */
+               0 0 3px rgba(0, 212, 255, 0.3);   /* Cyan glow */
+}
+
+.pixelify {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size:60px;
+  }
+}
+
+.text {
+  margin-bottom: 48px;
+  font-size: 20px;
+  color: #a4aab0;
+  font-weight: 500;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+@media (min-width: 640px) {
+  .text {
+    font-size: 16rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .text {
+    font-size: 19px;
+  }
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .button-group {
+    flex-direction: row;
+  }
+}
+
+.button {
+  padding: 16px 32px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: #138dff;
+}
+
+.button-secondary {
+  background-color: black;
+  color: white;
+}
+
+.button-secondary:hover {
+  background-color: #138dff;
+}
+
+.svg-top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+@media (min-width: 1024px) {
+  .svg-top {
+    opacity: 1;
+  }
+}
+
+.svg-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+@media (min-width: 1024px) {
+  .svg-bottom {
+    opacity: 1;
+  }
+}
