@@ -16,12 +16,12 @@ const Hero = () => {
         Boost your career by writing for OpenCV University. Share your insights on AI and computer vision, and become a opencv university blog writer certification.Connect with a global audience of tech professionals.
         </p>
         <div className={styles['button-group']}>
-          <Link href="https://github.com/SriSomanaath/blog_writers.git" className={`${styles.button} ${styles['button-primary']}`}>
+          <a href="https://github.com/SriSomanaath/blog_writers.git" target="_blank" className={`${styles.button} ${styles['button-primary']}`}>
             🔥 Get Pro
-          </Link>
-          <Link href="https://github.com/SriSomanaath/blog_writers.git" className={`${styles.button} ${styles['button-secondary']}`}>
+          </a>
+          <a href="https://github.com/SriSomanaath/blog_writers.git" target="_blank" className={`${styles.button} ${styles['button-secondary']}`}>
             Star on GitHub
-          </Link>
+          </a>
         </div>
       </div>
     </section>
